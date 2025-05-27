@@ -43,7 +43,9 @@ Este site tem como objetivo fornecer informações sobre o Batman, incluindo sua
 - **Inimigos**: Detalhes sobre os vilões mais notórios enfrentados pelo Batman.
 - **Galeria**: Uma coleção de imagens do Batman ao longo dos anos.
 - **Contato**: Formulário para os visitantes entrarem em contato com o administrador do site.
-
+<div class="home-img">
+            <img src="https://i.postimg.cc/MTFyC2d0/Screenshot-1.png"  alt="home image">
+        </div>
 Contribuindo
 Contribuições são bem-vindas! Se você tem sugestões de melhorias ou encontrou algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
