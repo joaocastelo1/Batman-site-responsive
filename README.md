@@ -4,7 +4,7 @@ Bem-vindo ao projeto do site do Batman! Este projeto foi desenvolvido utilizando
 
 ## Visão Geral
 
-Este site tem como objetivo fornecer informações sobre o Batman, incluindo sua história, aliados, inimigos e muito mais. Ele foi projetado para ser responsivo e fácil de navegar, oferecendo uma experiência agradável para os fãs do Batman.
+Este site tem como objetivo fornecer informações sobre o filme do Batman, incluindo sua história, aliados, inimigos e muito mais. Ele foi projetado para ser responsivo e fácil de navegar, oferecendo uma experiência agradável para os fãs do Batman.
 
 ## Tecnologias Utilizadas
 
