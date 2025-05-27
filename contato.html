@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman2022</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./contato.css" />
+</head>
+<body class="bg-black text-white min-h-screen">
+    <header class="bg-black relative">
+        <div class="container mx-auto px-4 py-4 flex justify-between md:justify-start items-center">
+            <img id="logo" src="./Batman-logo-black-and-white-picture_2560x1600.jpg" class="w-32 md:w-[120px]"/>
+            
+            <!-- Hamburger menu button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl font-bold">☰</button>
+            
+            <!-- Navigation menu -->
+            <nav id="nav-menu" class="hidden md:block md:ml-12">
+                <ul class="flex flex-col md:flex-row absolute md:relative left-0 right-0 top-full md:top-auto bg-black md:bg-transparent p-4 md:p-0 gap-4 md:gap-8">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="contanto-banner1" class="w-full h-48 md:h-64 bg-cover bg-center"></div>
+    
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Entre em Contato</h2>
+        
+        <form class="max-w-lg mx-auto space-y-6 bg-gray-900 p-8 rounded-lg shadow-xl">
+            <div class="space-y-2">
+                <label for="nome" class="block text-sm font-medium">Nome</label>
+                <input type="text" id="nome" name="nome" required
+                    class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-colors">
+            </div>
+            
+            <div class="space-y-2">
+                <label for="email" class="block text-sm font-medium">E-mail</label>
+                <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-colors">
+            </div>
+            
+            <div class="space-y-2">
+                <label for="telefone" class="block text-sm font-medium">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required
+                    class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-colors">
+            </div>
+            
+            <div class="space-y-2">
+                <label for="endereco" class="block text-sm font-medium">Endereço</label>
+                <textarea id="endereco" name="endereco" rows="3" required
+                    class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-colors"></textarea>
+            </div>
+            
+            <div class="space-y-2">
+                <label for="mensagem" class="block text-sm font-medium">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required
+                    class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 outline-none transition-colors"></textarea>
+            </div>
+            
+            <button type="submit" 
+                class="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded transition-colors duration-200">
+                Enviar Mensagem
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

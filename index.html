@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Batman2022</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header class="bg-black relative">
+        <div class="container mx-auto px-4 py-4 flex justify-between md:justify-start items-center">
+            <img id="logo" src="./Batman-logo-black-and-white-picture_2560x1600.jpg" class="w-32 md:w-[120px]"/>
+            
+            <!-- Hamburger menu button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl font-bold">☰</button>
+            
+            <!-- Navigation menu -->
+            <nav id="nav-menu" class="hidden md:block md:ml-12">
+                <ul class="flex flex-col md:flex-row absolute md:relative left-0 right-0 top-full md:top-auto bg-black md:bg-transparent p-4 md:p-0 gap-4 md:gap-8">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner"></div>
+    <div id="trailer-container">
+        <div class="content">
+            <video controls class="trailer">
+                <source src="./X2Download.app-BATMAN  _ Trailer 2 Oficial Legendado _ DC FanDome 2021-(480p).mp4" type="video/mp4">
+                Seu navegador não possui suporte para vídeos
+            </video>
+            <div id="sinopse">
+                <p class="description">
+                    Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.
+                </p>
+                <button class="button">Comprar Ingresso</button>
+            </div>
+        </div>
+    </div class="actor-cards-container">
+        <div class="cards-content">
+            <div class="card banner-1">Robert Pattinson - Batman</div>
+            <div class="card banner-2">Zoe Kravitz - Mulher Gato</div>
+            <div class="card banner-3">Jeffrey Wright - Gordon</div>
+        </div>
+
+        <footer>
+            <img style="object-fit: contain;" id="logo" src="./Batman-logo-black-and-white-picture_2560x1600.jpg" />
+            <span>Todos os direitos reservados ©</span>
+            <span>Desenvolvido por: Joao Castelo</span>
+
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </footer>
+
+    <div>
+
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
